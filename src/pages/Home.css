@@ -1,0 +1,9 @@
+.welcome-images {
+  width: 500px;
+  height: auto;
+}
+
+img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
