@@ -21,7 +21,12 @@ const Gallery = () => {
       <div className="crewmate-container">
         {mates && mates.length > 0 ? (
           mates.map((mate, index) => (
-            <Card Name={mate.Name} Speed={mate.Speed} Color={mate.Color}></Card>
+            <Card
+              id={mate.id}
+              Name={mate.Name}
+              Speed={mate.Speed}
+              Color={mate.Color}
+            ></Card>
           ))
         ) : (
           <h2>No Mates Yet 😞</h2>

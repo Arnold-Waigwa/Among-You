@@ -9,6 +9,7 @@ img {
   margin: auto;
   position: relative;
   font-size: larger;
+  margin-left: 10px;
 }
 
 .mini-container {

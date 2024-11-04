@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Create from "./pages/Create";
 import Gallery from "./pages/Gallery";
+import Edit from "./pages/Edit";
 
 import { useRoutes } from "react-router-dom";
 
@@ -15,6 +16,7 @@ function App() {
     { path: "/", element: <Home /> },
     { path: "/create", element: <Create /> },
     { path: "/gallery", element: <Gallery /> },
+    { path: "/Edit/:id", element: <Edit /> },
   ]);
 
   return (
