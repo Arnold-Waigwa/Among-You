@@ -45,7 +45,7 @@ const Create = () => {
         </div>
         <div className="mini-container">
           <label>
-            <h3>Speed:</h3>
+            <h3>Speed (mph):</h3>
           </label>
           <input
             type="text"
