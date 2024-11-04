@@ -7,6 +7,14 @@ const Edit = () => {
   const { id } = useParams();
   const [crewMate, setCrewMate] = useState({ name: "", speed: "", color: "" });
 
+  const deletePost = async (event) => {
+    event.preventDefault();
+
+    await supabase.from("Crewmate").delete().eq("id", id);
+
+    window.location = "/";
+  };
+
   // Fetch the existing crewmate data
   useEffect(() => {
     const fetchCrewmate = async () => {
@@ -107,6 +115,11 @@ const Edit = () => {
         </div>
         <br />
         <button type="submit">Update Crewmate</button>
+        <br />
+        <br />
+        <button className="deleteButton" onClick={deletePost}>
+          Delete
+        </button>
       </form>
     </div>
   );
